@@ -1,0 +1,154 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Flunt/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Flunt": "2.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Flunt.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.Br.dll": {}
+        }
+      },
+      "EmailApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Flunt.Br": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EmailApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flunt/2.0.3": {
+      "sha512": "0AEzlD5GM7b9aNn+CjSU9T9dney9ZqIlmvBa5pmLjx5sxVH4MEv2f7yKNVLmpQ6mGgTl3vQHDwqWZEL0+sRb1A==",
+      "type": "package",
+      "path": "flunt/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.3.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "Flunt.Br/2.0.0": {
+      "sha512": "OdURuAJ00wbtbRFbg32hJSx3ZENibuwQ7ayTzaI/oeMWtTQBjr3zhfb/bSipPDsIIK/sMoxdbmZzh3j7bcGyjQ==",
+      "type": "package",
+      "path": "flunt.br/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt-icon-br_compressed.png",
+        "flunt.br.2.0.0.nupkg.sha512",
+        "flunt.br.nuspec",
+        "lib/netstandard2.0/Flunt.Br.dll"
+      ]
+    },
+    "EmailApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EmailApiDomain/EmailApi.Domain.csproj",
+      "msbuildProject": "../EmailApiDomain/EmailApi.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "EmailApi.Domain >= 1.0.0",
+      "Flunt.Br >= 2.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiApplication\\EmailApi.Application.csproj",
+      "projectName": "EmailApi.Application",
+      "projectPath": "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiApplication\\EmailApi.Application.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiApplication\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiDomain\\EmailApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiDomain\\EmailApi.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Flunt.Br": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

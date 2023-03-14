@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RGsxkvECi+0k8xqBe2EFRiJPicU3iXUjiqQA/oeC8jEIEcbS13oTemFf4rVS8xmJ0seNFHjAHxYQZOMRNIJJIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\repo\\API-Email\\EmailApiDomain\\EmailApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\flunt\\2.0.3\\flunt.2.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
